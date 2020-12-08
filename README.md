@@ -30,6 +30,7 @@ n| User Story | Acceptance criteria
     - change status
     - show all done tasks
     - show all not done tasks
+   - Call chosen action
 - [ ] Add task
   - add task to List
   - return to menu
@@ -42,8 +43,8 @@ n| User Story | Acceptance criteria
   - change status of chosen task
   - return to menu
 - [ ] show all dome tasks
-  - application lists all dome tasks
+  - application lists all done tasks
   - after users command (press Enter) return to menu
 - [ ] show all not dome tasks
-  - application lists all not dome tasks
+  - application lists all not done tasks
   - after users command (press Enter) return to menu
