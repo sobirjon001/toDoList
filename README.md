@@ -48,7 +48,9 @@ n| User Story | Acceptance criteria
   - return to menu
 - [ ] Show all done tasks
   - application lists all done tasks
+  - inform no done tasks if so
   - after users command (press Enter) return to menu
 - [ ] Show all not done tasks
   - application lists all not done tasks
+  - inform no not done tasks if so
   - after users command (press Enter) return to menu
