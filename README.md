@@ -11,9 +11,8 @@ n| User Story | Acceptance criteria
 -| - | Reduction of the number of items
 3| As a user I Want to be able to check mark the task  | User able to check mark chosen task
 4| As a user I Want to be able to see all task  | User able to see all tasks and their status
-5| As a user I Want to be able to edit task | User able to edit tasks
-6| As a user I Want to be able to sort task according to status | User able to see a list according to chosen status
-7| As a user I Want to be informed for invalid entry | Application should inform user about invalid entry and prompt to try again
+5| As a user I Want to be able to sort task according to status | User able to see a list according to chosen status
+6| As a user I Want to be informed for invalid entry | Application should inform user about invalid entry and prompt to try again
 
 ## Sprint Backlog
 
@@ -23,7 +22,8 @@ n| User Story | Acceptance criteria
   - Template have ability to change status
   - Template have ability to be printed to display task and status
 - [ ] Create a menu
-  - List all task
+  - List all tasks
+  - inform no tasks if tasks list is empty
   - List all options:
     - add task
     - delete task
@@ -31,23 +31,24 @@ n| User Story | Acceptance criteria
     - show all done tasks
     - show all not done tasks
   - have a logic to check invalid entry
-  - call function corresponding to chosen option
+  - call function corresponding to chosen option if tasks list is not empty
+  - inform no tasks if tasks list is empty and reload menu
 - [ ] Add task
   - add task to List
   - return to menu
-- [ ] delete task from List
+- [ ] Delete task from List
   - application asks use what do delete by showing list with indexes
-  - chosen index of task is deleted
+  - chosen task by index is deleted
   - have a logic to check invalid entry
   - return to menu
-- [ ] change status of task
+- [ ] Change status of task
   - application asks use what task to change status by showing list with indexes
-  - change status of chosen task
+  - change status of chosen task index
   - have a logic to check invalid entry
   - return to menu
-- [ ] show all dome tasks
-  - application lists all dome tasks
+- [ ] Show all done tasks
+  - application lists all done tasks
   - after users command (press Enter) return to menu
-- [ ] show all not dome tasks
-  - application lists all not dome tasks
+- [ ] Show all not done tasks
+  - application lists all not done tasks
   - after users command (press Enter) return to menu
