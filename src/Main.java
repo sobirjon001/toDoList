@@ -79,24 +79,24 @@ public class Main {
     for (int i = 0; i < tasks.size(); i++) {
       System.out.println(i + " - " + tasks.get(i));
     }
-    String xx = s.next();   // Have them enter as String
-
-    for (char each:xx.toCharArray()){   //check to confirm they are digit
-      while (!Character.isDigit(each)){
-        System.out.println("Enter a valid task number");
-        System.out.println("Which one to delete ?");
-        for (int i = 0; i < tasks.size(); i++) {
-          System.out.println(i + " - " + tasks.get(i));
+    // checking for invalid entry:
+    boolean isNotValid = true;
+    boolean isDigit = true;
+    int x; // declaring x outside do-while so tasks.remove(x) is accessible
+    do{
+      String xx= s.next();  // Have them enter as String
+      x = Integer.parseInt(xx);  //convert String to int
+      for (char each:xx.toCharArray()){  //check to confirm they are digit
+        if (!Character.isDigit(each)){
+          isDigit = false;
         }
-         xx = s.next();
       }
-    }
-    int x = Integer.parseInt(xx); //convert String to int
-
-    while (x >= tasks.size()) {
-      System.out.println("Please enter a valid task number"); //Enter this if statement
-      x = s.nextInt();
-    }
+      if(x >= tasks.size() && isDigit){
+        isNotValid = false;
+      }else {
+        System.out.println("Please enter a valid task number");
+      }
+    } while (isNotValid);
     tasks.remove(x);
     menu();
   }
@@ -107,22 +107,24 @@ public class Main {
     for (int i = 0; i < tasks.size(); i++) {
       System.out.println(i + " - " + tasks.get(i));
     }
-    String xx= s.next();  // Have them enter as String
-    for (char each:xx.toCharArray()){  //check to confirm they are digit
-      while (!Character.isDigit(each)){
-        System.out.println("Enter a valid task number");
-        System.out.println("Which one to delete ?");
-        for (int i = 0; i < tasks.size(); i++) {
-          System.out.println(i + " - " + tasks.get(i));
+    // checking for invalid entry:
+    boolean isNotValid = true;
+    boolean isDigit = true;
+    int x; // declaring x outside do-while so tasks.get(x) is accessible
+    do{
+      String xx= s.next();  // Have them enter as String
+      x = Integer.parseInt(xx);  //convert String to int
+      for (char each:xx.toCharArray()){  //check to confirm they are digit
+        if (!Character.isDigit(each)){
+          isDigit = false;
         }
-        xx = s.next();
       }
-    }
-    int x = Integer.parseInt(xx);  //convert String to int
-    while (x >= tasks.size()) {
-      System.out.println("Please enter a valid task number"); //Enter this if statement
-      x = s.nextInt();
-    }
+      if(x >= tasks.size() && isDigit){
+        isNotValid = false;
+      }else {
+        System.out.println("Please enter a valid task number");
+      }
+    } while (isNotValid);
     tasks.get(x).toggleDone();
     menu();
   }
