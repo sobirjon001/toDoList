@@ -31,7 +31,7 @@ n| User Story | Acceptance criteria
     - show all done tasks
     - show all not done tasks
   - have a logic to check invalid entry
-  - call function corresponding to chosen option if tasks list is not empty
+  - call function corresponding to chosen option if tasks list is not empty except for adding new task request
   - inform no tasks if tasks list is empty and reload menu
 - [ ] Add task
   - add task to List
