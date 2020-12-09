@@ -8,7 +8,7 @@ n| User Story | Acceptance criteria
 -|-|-
 1| As a use I Want to be able to add task | User able to add task    
 2| As a use I Want to be able to delete task  | User should be able to delete chosen task  
-  |   | Reduction of the number of items
+-| - | Reduction of the number of items
 3| As a use I Want to be able to check mark the task  | User able to check mark chosen task
 4| As a use I Want to be able to see all task  | User able to see all tasks and their status
 5| As a use I Want to be able to edit task | User able to edit tasks
