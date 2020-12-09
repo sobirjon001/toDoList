@@ -82,19 +82,24 @@ public class Main {
     // checking for invalid entry:
     boolean isNotValid = true;
     boolean isDigit = true;
-    int x; // declaring x outside do-while so tasks.remove(x) is accessible
+    int x = 0; // declaring x outside do-while so tasks.get(x) is accessible
     do{
       String xx= s.next();  // Have them enter as String
-      x = Integer.parseInt(xx);  //convert String to int
+
       for (char each:xx.toCharArray()){  //check to confirm they are digit
         if (!Character.isDigit(each)){
           isDigit = false;
         }
       }
-      if(x >= tasks.size() && isDigit){
-        isNotValid = false;
+      if (isDigit){
+        x = Integer.parseInt(xx);  //convert String to int
+        if(x > tasks.size()){
+          isNotValid = false;
+        }else {
+          System.out.println("Please enter a valid task number 1");
+        }
       }else {
-        System.out.println("Please enter a valid task number");
+        System.out.println("Please enter a valid task number 2");
       }
     } while (isNotValid);
     tasks.remove(x);
@@ -110,19 +115,24 @@ public class Main {
     // checking for invalid entry:
     boolean isNotValid = true;
     boolean isDigit = true;
-    int x; // declaring x outside do-while so tasks.get(x) is accessible
+    int x = 0; // declaring x outside do-while so tasks.get(x) is accessible
     do{
       String xx= s.next();  // Have them enter as String
-      x = Integer.parseInt(xx);  //convert String to int
+
       for (char each:xx.toCharArray()){  //check to confirm they are digit
         if (!Character.isDigit(each)){
           isDigit = false;
         }
       }
-      if(x >= tasks.size() && isDigit){
-        isNotValid = false;
+      if (isDigit){
+        x = Integer.parseInt(xx);  //convert String to int
+        if(x > tasks.size()){
+          isNotValid = false;
+        }else {
+          System.out.println("Please enter a valid task number 1");
+        }
       }else {
-        System.out.println("Please enter a valid task number");
+        System.out.println("Please enter a valid task number 2");
       }
     } while (isNotValid);
     tasks.get(x).toggleDone();
