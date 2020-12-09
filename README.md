@@ -1,4 +1,4 @@
-# Welcome to TO Do List Project
+# Welcome to To Do List Project
 
 you can see markdown syntax [here](https://github.com/marktext/marktext/blob/master/docs/MARKDOWN_SYNTAX.md)
 
@@ -16,11 +16,11 @@ n| User Story | Acceptance criteria
 
 ## Sprint Backlog
 
-- [ ] Create a template for TO-Do Task
+- [ ] Create a template for To-Do Task
   - Template have task instance
-  - Template have status of done or not done
+  - Template have status instance of done or not done
   - Template have ability to change status
-  - Template have ability to be printed to display task and status
+  - Template have ability to be printed and display task and status
 - [ ] Create a menu
   - List all tasks
   - inform no tasks if tasks list is empty
