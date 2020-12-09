@@ -11,22 +11,18 @@ public class TodoList {
 
     // i will use different methods, instances , custom class todoList
 
-
-
-
-
     static class ToDoList{
 
-        String task ;
+        String task ; // instance , every new object will have his own value
 
         boolean isDone = false;
 
         public ToDoList(String task ){ // it s constructor, it is like setInfo
             this.task = task;
-        }
+        } // it is a constructor , works like a setInfo
 
         public void toggleDone(){ // this is the method
-            this.isDone = !isDone; // change to opposite value to true or false
+            this.isDone = !isDone; // changes to opposite value to true or false
         }
 
         public String toString() {
@@ -39,10 +35,10 @@ public class TodoList {
     static Scanner s = new Scanner(System.in);
     static ArrayList<ToDoList> tasks = new ArrayList<>();
 
-    static public void menu(){
+    static public void menu(){ // lets user to choose the action , that he want
 
         for (int i = 0; i < tasks.size(); i++){
-            System.out.println( i + " - " + tasks.get(i) );
+            System.out.println( i + " - " + tasks.get(i) ); // represents each object of the ArrayList
         }
 
         System.out.println("Please choose your action: \n[1] - add new task\n[2] - delete task");
@@ -52,7 +48,7 @@ public class TodoList {
 
         int number = s.nextInt();
 
-        switch (number){
+        switch (number){ // we need switch statement to use our methods (which we created for our actions)
 
             case 1:
                 createTask();
@@ -72,25 +68,19 @@ public class TodoList {
                 break;
 
             default:
+                s.nextLine();
                 System.out.println("Invalid entry \nPress enter to try again");
                 s.nextLine();
                 menu();
-
-
         }
-
-
-
-
-
     }
 
     static public void createTask(){
         System.out.println("Please enter your task: ");
-        s.nextLine();
+        s.nextLine(); // it will accept enter
        String input = s.nextLine();
 
-       tasks.add( new ToDoList(input) );
+       tasks.add( new ToDoList(input) ); // adding our input to ArrayList
 
        menu();
     }
@@ -114,12 +104,12 @@ public class TodoList {
         System.out.println("Which one to mark ?");
 
         for (int i = 0; i < tasks.size(); i++){
-            System.out.println( i + " - " + tasks.get(i) );
+            System.out.println( i + " - " + tasks.get(i) ); //each object in ArrayList
         }
 
         int n = s.nextInt();
 
-        tasks.get(n).toggleDone();
+        tasks.get(n).toggleDone(); // we are using method "toggleDone" to switch our boolean isDone to true or vice versa
 
         menu();
     }
@@ -127,13 +117,13 @@ public class TodoList {
     static public void showAllDone(){
 
         for (int i = 0; i< tasks.size(); i++){
-            if ( tasks.get(i).isDone ){
+            if ( tasks.get(i).isDone ){ // if object have boolean = true, then
                 System.out.println( i + " - " + tasks.get(i) );
             }
 
         }
 
-        s.nextLine();
+        s.nextLine(); // accepts enter
         System.out.println("Press enter to go to menu");
         s.nextLine();
         menu();
@@ -141,13 +131,13 @@ public class TodoList {
 
     static public void showAllNotDone(){
         for (int i = 0; i< tasks.size(); i++){
-            if ( !(tasks.get(i).isDone) ){
+            if ( !(tasks.get(i).isDone) ){ // if object have boolean = !true, then
                 System.out.println( i + " - " + tasks.get(i) );
             }
 
         }
 
-        s.nextLine();
+        s.nextLine(); // accepts enter
         System.out.println("Press enter to go to menu");
         s.nextLine();
         menu();
