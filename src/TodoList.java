@@ -103,6 +103,10 @@ public class TodoList {
         }
 
         int x = s.nextInt();
+        if (x>=tasks.size()){
+            System.out.println("Please enter a valid task number");
+            x = s.nextInt();
+        }
 
         tasks.remove(x);
 
@@ -118,6 +122,10 @@ public class TodoList {
         }
 
         int n = s.nextInt();
+        if (n>=tasks.size()){
+            System.out.println("Please enter a valid task number");
+            n = s.nextInt();
+        }
 
         tasks.get(n).toggleDone();
 
