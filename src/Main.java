@@ -1,3 +1,5 @@
+import jdk.nashorn.internal.ir.IfNode;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -33,22 +35,22 @@ public class Main {
     System.out.println("4 - show all tasks is done ");
     System.out.println("5 - show all tasks is not done ");
 
-    int number = s.nextInt();
-    if(!tasks.isEmpty()||number==1) {
+    String number = s.next();  // convert to string
+    if(!tasks.isEmpty()||number.equals("1")) {
       switch (number) {
-        case 1:
+        case "1":
           createTask();
           break;
-        case 2:
+        case "2":
             deleteTask();
           break;
-        case 3:
+        case "3":
             markTask();
           break;
-        case 4:
+        case "4":
             showAllDone();
           break;
-        case 5:
+        case "5":
             showAllNotDone();
           break;
         default:
@@ -77,7 +79,20 @@ public class Main {
     for (int i = 0; i < tasks.size(); i++) {
       System.out.println(i + " - " + tasks.get(i));
     }
-    int x = s.nextInt();
+    String xx = s.next();   // Have them enter as String
+
+    for (char each:xx.toCharArray()){   //check to confirm they are digit
+      while (!Character.isDigit(each)){
+        System.out.println("Enter a valid task number");
+        System.out.println("Which one to delete ?");
+        for (int i = 0; i < tasks.size(); i++) {
+          System.out.println(i + " - " + tasks.get(i));
+        }
+         xx = s.next();
+      }
+    }
+    int x = Integer.parseInt(xx); //convert String to int
+
     while (x >= tasks.size()) {
       System.out.println("Please enter a valid task number"); //Enter this if statement
       x = s.nextInt();
@@ -92,7 +107,18 @@ public class Main {
     for (int i = 0; i < tasks.size(); i++) {
       System.out.println(i + " - " + tasks.get(i));
     }
-    int x = s.nextInt();
+    String xx= s.next();  // Have them enter as String
+    for (char each:xx.toCharArray()){  //check to confirm they are digit
+      while (!Character.isDigit(each)){
+        System.out.println("Enter a valid task number");
+        System.out.println("Which one to delete ?");
+        for (int i = 0; i < tasks.size(); i++) {
+          System.out.println(i + " - " + tasks.get(i));
+        }
+        xx = s.next();
+      }
+    }
+    int x = Integer.parseInt(xx);  //convert String to int
     while (x >= tasks.size()) {
       System.out.println("Please enter a valid task number"); //Enter this if statement
       x = s.nextInt();
