@@ -11,7 +11,7 @@ Our SDLC cycle here on this document missing states like `Design`, `Product Back
 ### content:
 1. First cycle of SDLC -> initial/deployment
   - [Sprint Backlog ver. 0.1](#sprint-backlog-ver-01)
-  - [System Requirements Specification Document ver. 1.1](#system-requirements-specification-document-ver-11)
+  - [System Requirements Specification Document ver. 0.1](#system-requirements-specification-document-ver-01)
 2. Second cycle of SDLC <-- Maintenance feedback and bug reports
   - [System Requirements Specification Document ver. 1.1](#system-requirements-specification-document-ver-11)
   - [Sprint Backlog ver. 1.1](#sprint-backlog-ver-11)
