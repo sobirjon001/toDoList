@@ -10,17 +10,17 @@ Our SDLC cycle here on this document missing states like `Design`, `Product Back
 
 ### content:
 1. First cycle of SDLC -> initial/deployment
-   - [System Requirements Specification Document ver. 0.1](#System-Requirements-Specification-Document-ver.-0.1)
-   - [Sprint Backlog ver. 0.1](#Sprint-Backlog-ver.-0.1)
+   https://github.com/sobirjon001/toDoList#stagingpreproduction-environment   - [System Requirements Specification Document ver. 0.1](#system-requirements-specification-document-ver-01)
+   - [Sprint Backlog ver. 0.1](#sprint-backlog-ver-01)
 2. Second cycle of SDLC <-- Maintenance feedback and bug reports
-  - [System Requirements Specification Document ver. 1.1](#System-Requirements-Specification-Document-ver.-1.1)
-  - [Sprint Backlog ver. 1.1](#Sprint-Backlog-ver.-1.1)
+  - [System Requirements Specification Document ver. 1.1](#system-requirements-specification-document-ver-11)
+  - [Sprint Backlog ver. 1.1](#sprint-backlog-ver-11)
 3. Environments explanation
-  - [What is environment?](#What-is-environment?)
-  - [Developers environment](#Developers-environment)
-  - [QA environment](#QA-environment)
-  - [Staging/preproduction environment](#Staging/preproduction-environment)
-  - [Deployment](#Deployment)
+  - [What is environment?](#what-is-environment)
+  - [Developers environment](#developers-environment)
+  - [QA environment](#qa-environment)
+  - [Staging/preproduction environment](#stagingpreproduction-environment)
+  - [Deployment](#deployment)
 
 ### System Requirements Specification Document ver. 0.1
 [content](#content)
