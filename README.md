@@ -33,7 +33,6 @@ n| User Story | Acceptance criteria
 0.4| As a user I Want to be able to check mark the task  | User able to check mark chosen task
 0.5| As a user I want to able to sort tasks base on done or not done |  User able to see only all done tasks
 -|-| User able to see only all not done tasks
-
 5| As a user I Want to be able to sort task according to status | User able to see a list according to chosen status
 6| As a user I Want to be informed for invalid entry | Application should inform user about invalid entry and prompt to try again
 
