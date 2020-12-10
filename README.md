@@ -10,7 +10,7 @@ Our SDLC cycle here on this document missing states like `Design`, `Product Back
 
 ### content:
 1. First cycle of SDLC -> initial/deployment
-   - [System Requirements Specification Document ver. 0.1](System-Requirements-Specification-Document-ver.-0.1)
+   - [System Requirements Specification Document ver. 0.1](#System-Requirements-Specification-Document-ver.-0.1)
    - [Sprint Backlog ver. 0.1](#Sprint-Backlog-ver.-0.1)
 2. Second cycle of SDLC <-- Maintenance feedback and bug reports
   - [System Requirements Specification Document ver. 1.1](#System-Requirements-Specification-Document-ver.-1.1)
@@ -20,7 +20,7 @@ Our SDLC cycle here on this document missing states like `Design`, `Product Back
   - [Developers environment](#Developers-environment)
   - [QA environment](#QA-environment)
   - [Staging/preproduction environment](#Staging/preproduction-environment)
-  - [Deployment environment](#Deployment-environment)
+  - [Deployment](#Deployment)
 
 ### System Requirements Specification Document ver. 0.1
 [content](#content)
@@ -73,7 +73,6 @@ n| User Story | Acceptance criteria
   - inform no not done tasks if so
   - after users command (press Enter) return to menu
 
-
 ### System Requirements Specification Document ver. 1.1
 [content](#content)
 
@@ -97,23 +96,35 @@ n | User Story | Acceptance criteria
   - Create logic for checking invalid entry on menu
   - Display message that invalid entry entered and ask user to try again and reload current page
 
-
-
-
-
 ### What is environment?
 [content](#content)
 
 A software environment for a particular application could include the operating system, the database system, specific development tools or compiler.
+Based on function members of scrum team have their own environment where they store their work and do their assigned tasks. As every unit or piece of work or projects gets ready in one environment it goes to next environment for further work before deployment or release.
 
 ### Developers environment
 [content](#content)
 
+An development environment provides developers an interface and convenient view of the development process which includes writing code, testing the same and packaging the build so that it can be deployed.
+Examples for Development Environment
+  - Intelije IDE
+  - Microsoft Visual Studio
+  - Eclipse
+  - Netbeans
+  - Adobe Flex Builder
+Here developers create their code and run unit and integration test
+
 ### QA environment
 [content](#content)
+
+This environment is used by testers, QA analysts or other testing professionals to perform many forms of functional and non-functional testing, such as end-to-end testing, load testing, smoke testing, regression testing, and more. It's always best to wave more than one QA/Testing environments to get more necessary possible automated test cases as a better assurance of lesser bug project.
 
 ### Staging/preproduction environment
 [content](#content)
 
-### Deployment environment
+This is essentially a copy of the production environment. It’s meant to be as close as possible to production, so the team can verify if the application will behave correctly after its deployment.
+
+### Deployment
 [content](#content)
+
+At this state version of project or release is being on the market, used by end users. This version of project passed as mush as possible tests and is in the best as possible state. Of course as a continuous maintenance all bug reports, user feedback and new feature requests are accepted for next SDLC of the project
