@@ -10,7 +10,6 @@ Our SDLC cycle here on this document missing states like `Design`, `Product Back
 
 ### content:
 1. First cycle of SDLC -> initial/deployment
-   https://github.com/sobirjon001/toDoList#stagingpreproduction-environment   - [System Requirements Specification Document ver. 0.1](#system-requirements-specification-document-ver-01)
    - [Sprint Backlog ver. 0.1](#sprint-backlog-ver-01)
 2. Second cycle of SDLC <-- Maintenance feedback and bug reports
   - [System Requirements Specification Document ver. 1.1](#system-requirements-specification-document-ver-11)
