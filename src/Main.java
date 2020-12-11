@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.ir.IfNode;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
