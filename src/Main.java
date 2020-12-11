@@ -1,5 +1,3 @@
-import jdk.nashorn.internal.ir.IfNode;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -80,7 +78,7 @@ public class Main {
         use same logic so it combined between them
      */
     boolean isNotValid = true;
-    boolean isDigit = true;
+    boolean isDigit;
     int x = 0; // declaring x outside while so return can access it
     while (isNotValid){
       isDigit = true;
