@@ -15,12 +15,16 @@ public class Main {
     System.out.println("=========================================================");
   }
 
-  public static void menu() {
-    line();
-    // List all available tasks:
+  public static void printAllTasks(){
     for (int i = 0; i < tasks.size(); i++) {
       System.out.println(i + " - " + tasks.get(i));
     }
+  }
+
+  public static void menu() {
+    line();
+    // List all available tasks:
+    printAllTasks();
     if(tasks.isEmpty()){
       System.out.println("You have no tasks yet");
     }
@@ -92,10 +96,14 @@ public class Main {
         x = Integer.parseInt(xx);  //convert String to int
         if(x < tasks.size()-1){
           isNotValid = false;
-        }else {
+        }else { // if incorrect number entered
+          printAllTasks();
+          line();
           System.out.println("Please enter a valid task number");
         }
-      }else {
+      }else { // if not digits entered
+        printAllTasks();
+        line();
         System.out.println("Please enter a valid task number");
       }
     }
@@ -105,9 +113,7 @@ public class Main {
   static public void deleteTask() {
     line();
     System.out.println("Which one to delete ?");
-    for (int i = 0; i < tasks.size(); i++) {
-      System.out.println(i + " - " + tasks.get(i));
-    }
+    printAllTasks();
     int x = inputAndInvalid(); // get user input and checking for invalid entry:
     tasks.remove(x);
     menu();
@@ -116,9 +122,7 @@ public class Main {
   static public void markTask() {
     line();
     System.out.println("Which one to mark ?");
-    for (int i = 0; i < tasks.size(); i++) {
-      System.out.println(i + " - " + tasks.get(i));
-    }
+    printAllTasks();
     int x = inputAndInvalid(); // get user input and checking for invalid entry:
     tasks.get(x).toggleDone();
     menu();
