@@ -1,9 +1,10 @@
+package Market;
+
 public class ToDo {
 
+  public String task;
 
-  String task;
-
-  boolean isDone = false;
+  public boolean isDone = false;
 
   public ToDo(String task) { // it s constructor, it is like setInfo
     this.task = task;
@@ -19,3 +20,4 @@ public class ToDo {
 
 
 }
+

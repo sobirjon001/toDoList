@@ -1,3 +1,5 @@
+package Market;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -44,16 +46,16 @@ public class Main {
           createTask();
           break;
         case "2":
-            deleteTask();
+          deleteTask();
           break;
         case "3":
-            markTask();
+          markTask();
           break;
         case "4":
-            showAllDone();
+          showAllDone();
           break;
         case "5":
-            showAllNotDone();
+          showAllNotDone();
           break;
         default:
           System.out.println("Invalid entry! \nPress Enter to try again");
@@ -94,7 +96,7 @@ public class Main {
       }
       if (isDigit){
         x = Integer.parseInt(xx);  //convert String to int
-        if(x < tasks.size()-1){
+        if(x < tasks.size()){
           isNotValid = false;
         }else { // if incorrect number entered
           printAllTasks();
@@ -165,4 +167,6 @@ public class Main {
     s.nextLine();
     menu();
   }
+
 }
+
